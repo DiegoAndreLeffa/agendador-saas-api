@@ -1,7 +1,6 @@
-node_modules/
-dist/
-.env
-coverage/
-.DS_Store
-# Se a pasta do banco docker foi criada na raiz (pgdata), ignore-a:
-pgdata/
+**/node_modules
+**/dist
+**/.env
+**/coverage
+**/.DS_Store
+pgdata

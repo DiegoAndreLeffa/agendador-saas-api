@@ -30,12 +30,9 @@ export class User {
   })
   role: UserRole;
 
-  // Relacionamentos Inversos (opcional, mas ajuda nas queries)
-  // Um usuário pode ter vários agendamentos como cliente
   @OneToMany(() => Appointment, (appointment) => appointment.client)
   clientAppointments: Appointment[];
 
-  // Um usuário pode ser dono de barbearias
   @OneToMany(() => Barbershop, (barbershop) => barbershop.owner)
   barbershops: Barbershop[];
 
