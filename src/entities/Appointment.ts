@@ -8,7 +8,10 @@ export class Appointment {
   id: string;
 
   @Column("timestamp with time zone") // Importante: Com fuso horário!
-  date: Date;
+  start_date: Date;
+
+  @Column("timestamp with time zone") // Importante: Com fuso horário!
+  end_date: Date;
 
   // Status do agendamento
   @Column({ default: 'PENDING' })
