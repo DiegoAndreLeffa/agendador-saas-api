@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["es2020", "dom"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false, // Essencial para Entities do TypeORM
+    "esModuleInterop": true,
+    "experimentalDecorators": true, // OBRIGATÓRIO
+    "emitDecoratorMetadata": true, // OBRIGATÓRIO
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
