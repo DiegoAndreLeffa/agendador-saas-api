@@ -2,9 +2,12 @@ import 'reflect-metadata';
 import express from 'express';
 import { AppDataSource } from './database/data-source';
 
+import { routes } from './routes';
+
 const app = express();
 
 app.use(express.json());
+app.use(routes);
 
 // Inicializa a conexão com o banco
 AppDataSource.initialize()
